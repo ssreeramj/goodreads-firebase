@@ -7,6 +7,7 @@ Create a config.py file and place two variables there
 KEY = "....."
 SECRET = "....."
 ```
+And then paste these commands in terminal
 ```python
 pip install -r requirements.txt
 python main.py
