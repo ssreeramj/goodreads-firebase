@@ -24,9 +24,6 @@ for isbn_number in isbn_list:
         'img_url': img_url,
         'avg_rating': avg_rating
     })
-    # db.add({
-    #     'name': "Sreeram"
-    # })
 
 # for doc in db.get():
 #     print(u'{} => {}'.format(doc.id, doc.to_dict()))
