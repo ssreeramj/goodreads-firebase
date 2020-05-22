@@ -2,10 +2,10 @@
 
 ## Steps
 
-Create a config.py file and place two variables there
+Create a config.py file and place key and secret of goodreads api there
 ```python
-KEY = "....."
-SECRET = "....."
+key = "....."
+secret = "....."
 ```
 And then paste these commands in terminal
 ```python
