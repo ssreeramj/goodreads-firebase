@@ -12,17 +12,18 @@ store = firestore.client()
 
 db = store.collection(u'books')
 
-isbn_list = [9788172235147, 9788184000603, 9788172238476]
+isbn_list = [9788129124913]
 
 for isbn_number in isbn_list:
-    book_name, author_name, description, num_pages, img_url, avg_rating = get_book_details(isbn_number)
+    book_name, author_name, description, num_pages, img_url, avg_rating, small_img_url = get_book_details(isbn_number)
     db.add({
         'name': book_name,
         'author': author_name,
         'status': description,
         'pages': num_pages,
         'img_url': img_url,
-        'avg_rating': avg_rating
+        'avg_rating': avg_rating,
+        'small_img_url': small_img_url,
     })
 
 # for doc in db.get():
